@@ -46,8 +46,6 @@ class ContainerViewController: UIViewController {
             .filter(with: moviesFilter.genreFilters)
             .filter(with: moviesFilter.ratingFilters)
             .filter(with: moviesFilter.durationFilters)
-        
-        movieListVC.tableView.reloadData()
     }
 
 }
@@ -64,7 +62,6 @@ extension ContainerViewController: FilterListViewControllerDelegate {
     
     func filterListViewControllerDidClearFilters(controller: FilterListViewController) {
         movieListVC.movies = Movie.defaultMovies
-        movieListVC.tableView.reloadData()
     }
     
 }

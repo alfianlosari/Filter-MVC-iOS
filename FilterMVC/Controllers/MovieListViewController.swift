@@ -10,7 +10,12 @@ import UIKit
 
 class MovieListViewController: UITableViewController {
     
-    var movies = [Movie]()
+    var movies = [Movie]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.hour, .minute]
