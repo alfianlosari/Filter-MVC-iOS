@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8B5385B921CC4CC6007CA2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385B821CC4CC6007CA2B8 /* AppDelegate.swift */; };
-		8B5385BB21CC4CC6007CA2B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385BA21CC4CC6007CA2B8 /* ViewController.swift */; };
 		8B5385BE21CC4CC6007CA2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5385BC21CC4CC6007CA2B8 /* Main.storyboard */; };
 		8B5385C021CC4CC8007CA2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5385BF21CC4CC8007CA2B8 /* Assets.xcassets */; };
 		8B5385C321CC4CC8007CA2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5385C121CC4CC8007CA2B8 /* LaunchScreen.storyboard */; };
+		8B5385CB21CC519C007CA2B8 /* FilterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385CA21CC519C007CA2B8 /* FilterListViewController.swift */; };
+		8B5385CD21CC51D2007CA2B8 /* MovieFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385CC21CC51D2007CA2B8 /* MovieFilter.swift */; };
+		8B5385CF21CC5318007CA2B8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385CE21CC5318007CA2B8 /* Movie.swift */; };
+		8B5385D121CC5A81007CA2B8 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385D021CC5A81007CA2B8 /* MovieListViewController.swift */; };
+		8B5385D321CC8461007CA2B8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385D221CC8461007CA2B8 /* ContainerViewController.swift */; };
+		8B5385D521CCA340007CA2B8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5385D421CCA340007CA2B8 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B5385B521CC4CC6007CA2B8 /* FilterMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5385B821CC4CC6007CA2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B5385BA21CC4CC6007CA2B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B5385BD21CC4CC6007CA2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B5385BF21CC4CC8007CA2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5385C221CC4CC8007CA2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B5385C421CC4CC8007CA2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5385CA21CC519C007CA2B8 /* FilterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterListViewController.swift; sourceTree = "<group>"; };
+		8B5385CC21CC51D2007CA2B8 /* MovieFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFilter.swift; sourceTree = "<group>"; };
+		8B5385CE21CC5318007CA2B8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8B5385D021CC5A81007CA2B8 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		8B5385D221CC8461007CA2B8 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		8B5385D421CCA340007CA2B8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				8B5385B821CC4CC6007CA2B8 /* AppDelegate.swift */,
-				8B5385BA21CC4CC6007CA2B8 /* ViewController.swift */,
+				8B5385D621CCA3AC007CA2B8 /* Controllers */,
+				8B5385D921CCA3DA007CA2B8 /* Helpers */,
+				8B5385D821CCA3C8007CA2B8 /* Models */,
+				8B5385D721CCA3BB007CA2B8 /* Resources */,
+			);
+			path = FilterMVC;
+			sourceTree = "<group>";
+		};
+		8B5385D621CCA3AC007CA2B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B5385D221CC8461007CA2B8 /* ContainerViewController.swift */,
+				8B5385CA21CC519C007CA2B8 /* FilterListViewController.swift */,
+				8B5385D021CC5A81007CA2B8 /* MovieListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B5385D721CCA3BB007CA2B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8B5385BC21CC4CC6007CA2B8 /* Main.storyboard */,
 				8B5385BF21CC4CC8007CA2B8 /* Assets.xcassets */,
 				8B5385C121CC4CC8007CA2B8 /* LaunchScreen.storyboard */,
 				8B5385C421CC4CC8007CA2B8 /* Info.plist */,
 			);
-			path = FilterMVC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B5385D821CCA3C8007CA2B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B5385CC21CC51D2007CA2B8 /* MovieFilter.swift */,
+				8B5385CE21CC5318007CA2B8 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B5385D921CCA3DA007CA2B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8B5385D421CCA340007CA2B8 /* UIViewController+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5385BB21CC4CC6007CA2B8 /* ViewController.swift in Sources */,
+				8B5385CB21CC519C007CA2B8 /* FilterListViewController.swift in Sources */,
+				8B5385D321CC8461007CA2B8 /* ContainerViewController.swift in Sources */,
+				8B5385CD21CC51D2007CA2B8 /* MovieFilter.swift in Sources */,
+				8B5385D521CCA340007CA2B8 /* UIViewController+Extensions.swift in Sources */,
+				8B5385D121CC5A81007CA2B8 /* MovieListViewController.swift in Sources */,
 				8B5385B921CC4CC6007CA2B8 /* AppDelegate.swift in Sources */,
+				8B5385CF21CC5318007CA2B8 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = FilterMVC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FilterMVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
-				INFOPLIST_FILE = FilterMVC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FilterMVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
